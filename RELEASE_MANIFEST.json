@@ -1,0 +1,46 @@
+{
+  "version": "0.24.0",
+  "generated_at": "2026-09-16T12:12:08.836Z",
+  "files": [
+    {
+      "file": "mobile.html",
+      "size": 664584,
+      "sha256": "ee5a6d339689da1d754c1de375c7778497d71634eebd99d67d69b6a9844e1643"
+    },
+    {
+      "file": "pc.html",
+      "size": 664548,
+      "sha256": "962358c1d1e81f173546cc9d480c2d292330fc6fa33bf8811e4607e1bca07e34"
+    },
+    {
+      "file": "dashboard.html",
+      "size": 34650,
+      "sha256": "ee1e34d477fe31c78a5e306b07042f0a4fe6257f618aa5a463fd4539a1a21d7b"
+    },
+    {
+      "file": "manifest.webmanifest",
+      "size": 545,
+      "sha256": "33f2121ec496b2000525ccd887de2f9e4ca5bb6f576f2bbac4e41239dc7e5051"
+    },
+    {
+      "file": "sw.js",
+      "size": 1396,
+      "sha256": "f67fb93ebcf936c9a323449b25fd5d8d7aacf0ede5f4b69bc63a2388756f0b38"
+    },
+    {
+      "file": "icon-192.png",
+      "size": 1976,
+      "sha256": "dceef82536b1371798b4e675009161939029da73a20e0ea115f08caec0a7b788"
+    },
+    {
+      "file": "icon-512.png",
+      "size": 5384,
+      "sha256": "8ffd91875b6f4ee6e013cb80bbf977ce3d985f72eb1767aa241c567c5a30efe6"
+    },
+    {
+      "file": "server/index.js",
+      "size": 5357032,
+      "sha256": "14e35487d9b7a5ff50f449b2a1e8c1c0aff25f6c69eb67faac25ff94424d0fad"
+    }
+  ]
+}

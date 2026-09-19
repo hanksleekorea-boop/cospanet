@@ -1,0 +1,102 @@
+{
+  "schema": "dealcatch-monetization-launch-plan/v1",
+  "generated_at": "2026-08-31T06:39:32.119Z",
+  "version": "0.24.0",
+  "input_source": "monetization.example.json",
+  "contains_secrets": false,
+  "current_service": "free_non_transactional",
+  "operational": {
+    "score": 20,
+    "passed": 2,
+    "total": 10,
+    "missing": [
+      {
+        "id": "operator",
+        "label": "운영 주체 공개 명칭"
+      },
+      {
+        "id": "support",
+        "label": "지원 연락처"
+      },
+      {
+        "id": "plan_price",
+        "label": "요금제와 최종 가격"
+      },
+      {
+        "id": "billing_renewal",
+        "label": "결제 주기와 자동 갱신"
+      },
+      {
+        "id": "cancellation",
+        "label": "해지 방법과 적용 시점"
+      },
+      {
+        "id": "refund",
+        "label": "청약철회·환불 기준"
+      },
+      {
+        "id": "provider",
+        "label": "실제 결제 사업자 연결"
+      },
+      {
+        "id": "live_test",
+        "label": "실결제·취소·환불 종단 검사"
+      }
+    ]
+  },
+  "release_gate": {
+    "score": 0,
+    "passed": 0,
+    "total": 10,
+    "checkout_allowed": false,
+    "missing": [
+      {
+        "id": "operational_ready",
+        "label": "유료 운영 조건 95% 이상"
+      },
+      {
+        "id": "release_approval",
+        "label": "유료 공개 최종 승인"
+      },
+      {
+        "id": "policy_review",
+        "label": "요금·해지·환불 정책 검토"
+      },
+      {
+        "id": "production_provider",
+        "label": "실제 결제 환경 연결"
+      },
+      {
+        "id": "payment_evidence",
+        "label": "실결제 증거 지문"
+      },
+      {
+        "id": "cancellation_evidence",
+        "label": "해지 증거 지문"
+      },
+      {
+        "id": "refund_evidence",
+        "label": "환불 증거 지문"
+      },
+      {
+        "id": "monitoring",
+        "label": "결제 오류 감시 준비"
+      },
+      {
+        "id": "rollback",
+        "label": "결제 즉시 차단·복구 준비"
+      },
+      {
+        "id": "public_version",
+        "label": "검증판과 공개판 일치"
+      }
+    ]
+  },
+  "technical_safety": {
+    "score": 100,
+    "combinations_checked": 1024,
+    "false_ready": 0
+  },
+  "next_action": "monetization.example.json을 monetization.local.json으로 복사해 공개 가능한 운영 정보만 채우고 다시 검사합니다.",
+  "safety": "checkout_allowed가 true가 되기 전에는 결제 버튼과 결제 호출을 공개하지 않습니다."
+}
