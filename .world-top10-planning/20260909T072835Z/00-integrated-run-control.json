@@ -1,0 +1,19 @@
+{
+  "schema_version":"integrated-intelligence-run-control/v1",
+  "run_id":"INTEL-20260909T072835Z",
+  "generated_at_utc":"2026-09-09T07:28:35Z",
+  "mode":"END_TO_END",
+  "paste_and_run":true,
+  "low_skill_ai_five_stage_plan":true,
+  "plan_detail_profile":"EXHAUSTIVE_FRIENDLY_EXECUTABLE",
+  "project":{"name":"코스파넷","workspace":"D:/Desktop/챗지피티프로젝트들/코스파넷","identity":"일본 생활 가성비 발견·공유·가계부·절약 코치"},
+  "active_engines":["ENGINE_B_WORLD_TOP10_PLAN","ENGINE_C_READINESS_AUDIT"],
+  "inactive_engines":["ENGINE_A_TOP3"],
+  "reused_run":"../20260909T070320Z",
+  "read_only_scope":{"product_code_changed":0,"configuration_changed":0,"git_write":0,"deployment":0,"external_account_action":0,"analysis_artifact_writes":"this_run_only"},
+  "stage_contract":{"exact_stage_count":5,"stage_ids":["STAGE-1-BASELINE","STAGE-2-FOUNDATION","STAGE-3-CORE","STAGE-4-QUALITY","STAGE-5-RELEASE"],"stage_skip":false},
+  "status":{"plan":"PARTIAL_DETAIL_CONTRACT","x10":"REUSED_PARTIAL","readiness":"BLOCKED_EXTERNAL"},
+  "blocks":["D1 binding","WeSaver OAuth client/callback","custom DNS","real content rights/operator","one idle Android device"],
+  "new_artifacts":["FIVE_STAGE_DEVELOPMENT_INDEX.md","integrated-development-plan-5-stages.md","five-stage-detail-ledger.json","five-stage-dependency-graph.md","five-stage-requirement-traceability.csv","five-stage-test-matrix.csv","five-stage-risk-and-rollback-register.md","five-stage-low-skill-ai-handbook.md","five-stage-plan-quality-audit.md","five-stage-handoff-packets/","stage-01/","stage-02/","stage-03/","stage-04/","stage-05/"],
+  "final_status":"PLAN_PARTIAL_EXTERNAL_BLOCK"
+}

@@ -1,0 +1,7 @@
+id,priority,title,status,impact,verify
+GAP-001,P0,D1 영속 저장소·공개 딜 연결,BLOCKED_EXTERNAL,100,A/B 계정 종단시험
+GAP-002,P0,WeSaver Google OAuth 왕복,BLOCKED_EXTERNAL,100,로그인 왕복
+GAP-003,P0,custom DNS 연결,BLOCKED_EXTERNAL,90,HTTPS/CNAME/Worker
+GAP-004,P0,실제 일본 굿딜 콘텐츠,WAITING_EXTERNAL,95,출처·시각·정정
+GAP-005,P0,운영자·문의·법률 표면,WAITING_EXTERNAL,95,실제 수신·법률 확인
+GAP-006,P0,현재 Android 실기기,WAITING_EXTERNAL,80,유휴 1대 흐름

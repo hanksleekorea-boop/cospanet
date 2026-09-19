@@ -1,0 +1,9 @@
+{
+  "schema_version":"task-card-96field-template/v1",
+  "run_id":"INTEL-20260909T072835Z",
+  "field_count":96,
+  "fields":[
+    "task_id","stage_id","status","task_name","user_result","priority","risk","owner","dependencies","source_ids","requirement_ids","decision_ids","test_ids","evidence_slot","one_sentence_goal","user_situation","reproduce_steps","success_scene","predecessor_ids","successor_ids","backup_before","new_files","modify_files","protected_files","existing_pattern","implementation_recommendation","allowed_alternative","forbidden_method","inputs","boundaries","expected_output","error_output","api_contract","data_contract","ui_state_contract","role_permissions","micro_steps","micro_step_rule","smallest_check","command","working_directory","success_signal","failure_next_action","tests_minimum","tests_high_risk","negative_tests","regression_scope","rollback","evidence_path","completion_sentence","handoff_5_sentences","easy_explanation","why_now","before_reproduction","after_success_example","predecessor_outputs","successor_values","backup_reason","new_file_owner","modify_symbol","do_not_touch_reason","existing_pattern_reason","choice_reason","alternative_condition","forbidden_failure_symptom","input_example","boundary_values","output_example","error_example","function_io","field_validation","ui_copy_and_focus","role_allow_deny","step_01","step_02","step_03","step_04","step_05","step_06","step_07","step_08","step_09","step_10","step_11","step_12","step_rule","step_check","run_command","command_output","failure_command","test_01_to_12","negative_test_details","regression_details","rollback_order","evidence_sentence","handoff_sentence_1","handoff_sentence_2","handoff_sentence_3","handoff_sentence_4","handoff_sentence_5","discovery_id","unknown_resolution","ready_gate","last_verified_at"
+  ],
+  "usage":"모든 READY 카드에서 96개 키를 실제 값 또는 적용 제외 이유로 채운다. 현재 실행의 READY 카드는 0개다."
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version":"x10-workload-baseline/v1",
+  "run_id":"INTEL-20260909T070320Z",
+  "source":"v3.2 section 7.1",
+  "dimensions":[
+    {"id":"candidate_review","baseline_count":80,"target_count":800,"unit":"unique services"},
+    {"id":"common_atomic_metrics","baseline_count":160,"target_count":1600,"unit":"32 fields x 50"},
+    {"id":"core_atomic_metrics","baseline_count":50,"target_count":800,"unit":"8 core fields x 100"},
+    {"id":"specialist_perspectives","baseline_count":5,"target_count":50,"unit":"domain perspectives"},
+    {"id":"user_task_variants","baseline_count":15,"target_count":150,"unit":"distinct scenarios"},
+    {"id":"decision_cells","baseline_count":40,"target_count":400,"unit":"evidence-backed decisions"},
+    {"id":"task_card_fields","baseline_count":32,"target_count":64,"unit":"fields per card"},
+    {"id":"edge_cases","baseline_count":1000,"target_count":10000,"unit":"deterministic cases"},
+    {"id":"negative_samples","baseline_count":10,"target_count":100,"unit":"independent errors"},
+    {"id":"search_saturation_rounds","baseline_count":2,"target_count":20,"unit":"rounds per path"}
+  ],
+  "interpretation":"목표는 분량 부풀리기가 아니라 고유·적용가능·검증가능 레코드 수다. 범위를 채우지 못하면 X10_PARTIAL_SCOPE로 판정한다."
+}

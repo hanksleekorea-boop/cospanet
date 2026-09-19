@@ -1,0 +1,9 @@
+{
+  "schema":"crh-project-evidence/v1",
+  "assessedAt":"2026-09-09",
+  "scope":"all",
+  "project":{"name":"코스파넷","legacyName":"DealCatch","repository":"hanksleekorea-boop/dealcatch-private-source-v021","urls":{"worker":"https://kospanet.hanksleekorea.workers.dev","customDomain":"https://kospanet.scanners.cc","legacySites":"https://dealcatch-cityhunter.koreabike1234.chatgpt.site"},"offeredPlatforms":{"web":true,"responsiveMobileWeb":true,"pwa":true,"nativeAndroid":false,"nativeIos":false}},
+  "evidence":{"local":{"npmTest":"80/80","build":"pass","release":"27/27","surfaces":"pass","history":"44/44"},"cloudflare":{"staticSurfaces":"200","api":"503_STORAGE_UNAVAILABLE","d1":"unbound","dns":"unresolved"},"oauth":{"mode":"google_only","provider":"wesaver_target_unverified","roundTrip":"not_run"},"android":{"adbDevices":0,"status":"not_run"},"sites":{"list":"empty","recordedIds":"NOT_FOUND"}},
+  "benchmark":{"ours":{"feat":3,"ux":3,"perf":4,"trust":1,"reach":1,"price":3,"monet":1,"local":3},"comparators":[],"note":"comparators omitted from current engine input because historical comparison is preserved separately"},
+  "analysisMetadata":{"status":"blocked","evidenceSources":[".world-top10-planning/20260909T000000Z/source-register.md",".project-continuity/STATE.md"],"unknowns":["legal/operator/content/real-device"],"engineIgnoredSupplement":true}
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "integrated-intelligence-run/v1",
+  "run_id": "INTEL-20260909T000000Z",
+  "generated_at_utc": "2026-09-09T00:00:00Z",
+  "project_fingerprint": "kospanet-existing-worktree",
+  "artifact_type": "run-manifest",
+  "source_artifact_ids": ["WCA-20260824T065547Z", "CRH-20260820T043957Z", "GD-WORLD20-20260826"],
+  "records": [{
+    "mode": "END_TO_END",
+    "gates": {
+      "G0_TARGET_LOCK": "PASS",
+      "G1_EVIDENCE_READY": "PARTIAL",
+      "G2_CANDIDATE_POOL_READY": "PASS_REUSED",
+      "G3_TOP10_LOCKED": "PASS_REUSED_WITH_DATE_LIMIT",
+      "G4_BENCHMARK_COMPLETE": "PARTIAL",
+      "G5_GAP_COMPLETE": "PASS_DRAFT",
+      "G6_PRODUCT_PLAN_COMPLETE": "PASS_DRAFT",
+      "G7_FIVE_STAGE_PLAN_COMPLETE": "PASS_DRAFT",
+      "G8_CONSISTENCY_PASS": "PARTIAL"
+    }
+  }],
+  "counts": {"top10": 10, "gap_items": 20, "development_tasks": 25, "new_external_writes": 0},
+  "unknowns": ["current independent market leadership", "real Google OAuth round trip", "D1 binding", "custom DNS", "real Android current run", "real content and operator evidence"],
+  "warnings": ["2026-08-24 benchmark sources are historical and reused", "Readiness engine result from 2026-08-20 is not current", "no 99% or COMPLETE claim is permitted"]
+}

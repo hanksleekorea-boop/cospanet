@@ -1,0 +1,11 @@
+gap_id,priority,title,status,verify
+GAP-001,P0,D1 영속 저장,BLOCKED_EXTERNAL,A/B account reread
+GAP-002,P0,WeSaver OAuth,BLOCKED_EXTERNAL,state nonce PKCE roundtrip
+GAP-003,P0,Custom DNS,BLOCKED_EXTERNAL,HTTPS route
+GAP-004,P0,실제 콘텐츠 권리,WAITING_EXTERNAL,rights snapshot fact check
+GAP-005,P0,운영자 법률,WAITING_EXTERNAL,real support/legal evidence
+GAP-006,P0,Android,NOT_RUN,one idle approved device
+GAP-007,P1,알림함,PLANNED,consent dedupe unsubscribe
+GAP-008,P1,지점 정규화,PLANNED,store key
+GAP-009,P1,광고 CMP,WAITING_EXTERNAL,labels opt-out
+GAP-010,P1,복구,BLOCKED_EXTERNAL,checksum restore

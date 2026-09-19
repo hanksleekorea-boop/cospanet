@@ -1,0 +1,23 @@
+{
+  "schema_version":"world-top10-selection/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"world-top10-selection",
+  "source_artifact_ids":["SRC-COMP-002"],
+  "records":[
+    {"rank":1,"id":"SVC-01","name":"Google Shopping","catalogNumbers":[9,496],"score":61.25,"evidenceDate":"2026-08-24"},
+    {"rank":2,"id":"SVC-02","name":"Karma","catalogNumbers":[9,496],"score":56.75,"evidenceDate":"2026-08-24"},
+    {"rank":3,"id":"SVC-03","name":"Ibotta","catalogNumbers":[496],"score":54.75,"evidenceDate":"2026-08-24"},
+    {"rank":4,"id":"SVC-04","name":"ShopSavvy","catalogNumbers":[9,496],"score":54.5,"evidenceDate":"2026-08-24"},
+    {"rank":5,"id":"SVC-05","name":"Flipp","catalogNumbers":[495,496],"score":54.0,"evidenceDate":"2026-08-24"},
+    {"rank":6,"id":"SVC-06","name":"Price.com","catalogNumbers":[9],"score":53.25,"evidenceDate":"2026-08-24"},
+    {"rank":7,"id":"SVC-07","name":"Capital One Shopping","catalogNumbers":[9,496],"score":53.25,"evidenceDate":"2026-08-24"},
+    {"rank":8,"id":"SVC-08","name":"Honey","catalogNumbers":[9,496],"score":53.25,"evidenceDate":"2026-08-24"},
+    {"rank":9,"id":"SVC-09","name":"PriceSpy","catalogNumbers":[9],"score":52.5,"evidenceDate":"2026-08-24"},
+    {"rank":10,"id":"SVC-10","name":"GoodRx","catalogNumbers":[496],"score":52.5,"evidenceDate":"2026-08-24"}
+  ],
+  "status":"historical_lock_reused_not_current_rank",
+  "unknowns":["current independent top10 proof"],
+  "warnings":["scores are analyst-normalized benchmark values, not market share or user outcomes"]
+}

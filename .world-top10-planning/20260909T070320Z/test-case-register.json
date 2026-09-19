@@ -1,0 +1,27 @@
+{
+  "schema_version":"test-case-register/v1",
+  "run_id":"INTEL-20260909T070320Z",
+  "records":[
+    {"id":"TEST-001","kind":"api","scenario":"D1 없는 공개 GET","expected":"503/명시적 차단","actual":"기존 evidence 기준 503","status":"OBSERVED"},
+    {"id":"TEST-002","kind":"e2e","scenario":"A/B 계정 저장·재조회","expected":"두 계정 분리","actual":"미실행","status":"NOT_RUN"},
+    {"id":"TEST-003","kind":"auth","scenario":"OAuth state/nonce 불일치","expected":"거부","actual":"구성값 미확인","status":"BLOCKED_EXTERNAL"},
+    {"id":"TEST-004","kind":"auth","scenario":"OAuth 성공→D1 재조회","expected":"계정 복원","actual":"미실행","status":"BLOCKED_EXTERNAL"},
+    {"id":"TEST-005","kind":"browser","scenario":"온라인 딜 필수 필드","expected":"검토 전 공개 금지","actual":"로컬 계약 PASS","status":"OBSERVED"},
+    {"id":"TEST-006","kind":"browser","scenario":"매장 지점·관측시각","expected":"지점 분리","actual":"로컬 계약 PASS","status":"OBSERVED"},
+    {"id":"TEST-007","kind":"moderation","scenario":"신고→삭제→복구","expected":"감사로그 보존","actual":"실제 운영자 미확인","status":"NOT_RUN"},
+    {"id":"TEST-008","kind":"moderation","scenario":"이의→재심","expected":"결과 통지","actual":"실제 운영자 미확인","status":"NOT_RUN"},
+    {"id":"TEST-009","kind":"deployment","scenario":"custom DNS HTTPS","expected":"200/TLS","actual":"DNS unresolved","status":"BLOCKED_EXTERNAL"},
+    {"id":"TEST-010","kind":"freshness","scenario":"만료 딜 재확인","expected":"stale badge/queue","actual":"합성 로컬 PASS","status":"OBSERVED"},
+    {"id":"TEST-011","kind":"notification","scenario":"동의·중복·해제","expected":"no duplicate","actual":"원격 알림 미실행","status":"NOT_RUN"},
+    {"id":"TEST-012","kind":"pilot","scenario":"실제 가계부 절약 행동","expected":"행동 변화","actual":"합성 1,000명만","status":"NOT_REAL_USER"},
+    {"id":"TEST-013","kind":"content","scenario":"공식 출처 철회","expected":"자동공개 false","actual":"격리 계약 PASS","status":"OBSERVED"},
+    {"id":"TEST-014","kind":"content","scenario":"동일 체인 지점 분리","expected":"unique store key","actual":"실매장 자료 없음","status":"NOT_RUN"},
+    {"id":"TEST-015","kind":"ads","scenario":"CMP opt-out","expected":"ads blocked and labeled","actual":"승인·게시자 미확인","status":"BLOCKED_EXTERNAL"},
+    {"id":"TEST-016","kind":"android","scenario":"유휴 Android Chrome/PWA","expected":"full flow","actual":"이번 run 미실시","status":"NOT_RUN"},
+    {"id":"TEST-017","kind":"recovery","scenario":"backup restore checksum","expected":"exact restore","actual":"restore_verified=false","status":"BLOCKED_EXTERNAL"},
+    {"id":"TEST-018","kind":"accessibility","scenario":"TalkBack focus order","expected":"no trap","actual":"사람 시험 없음","status":"NOT_RUN"},
+    {"id":"TEST-019","kind":"performance","scenario":"repeat LCP distribution","expected":"p75 threshold","actual":"혼합 결과·반복 필요","status":"PARTIAL"},
+    {"id":"TEST-020","kind":"legal","scenario":"삭제·보존 정책","expected":"public policy + actual deletion","actual":"운영 주체 미확인","status":"BLOCKED_EXTERNAL"}
+  ],
+  "counts":{"total":20,"observed":7,"partial":1,"not_run":8,"blocked":4}
+}

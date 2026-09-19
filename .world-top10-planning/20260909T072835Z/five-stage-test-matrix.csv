@@ -1,0 +1,18 @@
+test_id,stage_id,task_id,risk,category,precondition,procedure,expected,fail_condition,evidence_path,status
+TEST-001,STAGE-1-BASELINE,TASK-1-001,high,storage,D1 binding known,anonymous GET then authenticated save,explicit STORAGE_UNAVAILABLE before binding,success UI while unbound,stage-01/tests/TEST-001.md,PLANNED
+TEST-002,STAGE-1-BASELINE,TASK-1-001,high,ownership,A/B accounts,save as A read as B,403 or empty for B,A data visible to B,stage-01/tests/TEST-002.md,PLANNED
+TEST-003,STAGE-1-BASELINE,TASK-1-002,high,auth,OAuth config,alter state/nonce,401 and no session,session accepted,stage-01/tests/TEST-003.md,PLANNED
+TEST-004,STAGE-1-BASELINE,TASK-1-002,high,auth,OAuth config,login logout login,account restored,duplicate or foreign session,stage-01/tests/TEST-004.md,PLANNED
+TEST-005,STAGE-1-BASELINE,TASK-1-003,high,dns,zone route,HTTPS GET custom host,200 TLS route,404/unresolved DNS,stage-01/tests/TEST-005.md,BLOCKED_EXTERNAL
+TEST-006,STAGE-3-CORE,TASK-3-001,high,rights,approved source,submit source snapshot,not public before review,unreviewed item public,stage-03/tests/TEST-006.md,PLANNED
+TEST-007,STAGE-3-CORE,TASK-3-001,high,revocation,approved item,revoke source,hidden and queued,revoked item remains public,stage-03/tests/TEST-007.md,PLANNED
+TEST-008,STAGE-5-RELEASE,TASK-5-003,high,operations,operator mailbox,submit private inquiry,real response and audit,unrouted inquiry,stage-05/tests/TEST-008.md,WAITING_EXTERNAL
+TEST-009,STAGE-5-RELEASE,TASK-5-003,high,legal,policy owner,open terms/privacy/delete,real owner and route,placeholder identity,stage-05/tests/TEST-009.md,WAITING_EXTERNAL
+TEST-010,STAGE-5-RELEASE,TASK-5-001,high,android,idle device approved,Chrome/PWA full flow,screen and network evidence,device missing/unauthorized,stage-05/tests/TEST-010.md,NOT_RUN
+TEST-011,STAGE-5-RELEASE,TASK-5-001,high,accessibility,TalkBack enabled,focus through save/delete,no focus trap or unlabelled control,stage-05/tests/TEST-011.md,NOT_RUN
+TEST-012,STAGE-3-CORE,TASK-3-002,medium,notification,consent granted,subscribe duplicate unsubscribe,one notification and off works,duplicate or no off,stage-03/tests/TEST-012.md,PLANNED
+TEST-013,STAGE-3-CORE,TASK-3-003,medium,store,store fixtures,submit same chain two branches,distinct store keys,merged branches,stage-03/tests/TEST-013.md,PLANNED
+TEST-014,STAGE-4-QUALITY,TASK-4-003,high,ads,CMP configured,opt out and reload,no ad request and label present,ad shown without consent,stage-04/tests/TEST-014.md,WAITING_EXTERNAL
+TEST-015,STAGE-4-QUALITY,TASK-4-003,high,ads,CMP configured,compare organic/affiliate/ad cards,distinct labels and ranking,paid card indistinguishable,stage-04/tests/TEST-015.md,WAITING_EXTERNAL
+TEST-016,STAGE-5-RELEASE,TASK-5-002,high,recovery,backup exists,delete then restore checksum,documented restore scope,partial silent restore,stage-05/tests/TEST-016.md,BLOCKED_EXTERNAL
+TEST-017,STAGE-5-RELEASE,TASK-5-002,high,recovery,backup exists,restore wrong owner,deny and audit,no audit or disclosure,stage-05/tests/TEST-017.md,BLOCKED_EXTERNAL

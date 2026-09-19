@@ -1,0 +1,33 @@
+field_id,axis,question,applies_to_ours,status,evidence_id,decision_link
+F-001,first_visit,첫 화면에서 일본 생활 가성비 가치가 10초 내 이해되는가,yes,ASSESSED,SRC-OWN-001,DEC-0016
+F-002,discovery,검색·필터로 지역·카테고리를 좁힐 수 있는가,yes,ASSESSED,SRC-OWN-001,DEC-0008
+F-003,input,온라인·매장 제보에 출처·관측시각이 필수인가,yes,ASSESSED,SRC-OWN-002,DEC-0004
+F-004,quality,오래됨·품절·재확인 상태가 보이는가,yes,ASSESSED,SRC-OWN-002,DEC-0007
+F-005,storage,계정별 저장과 선택 삭제가 가능한가,yes,UNVERIFIED,SRC-CF-001,DEC-0001
+F-006,sharing,사용자가 굿딜을 공유하고 포인트를 받는가,yes,PARTIAL,SRC-OWN-003,DEC-0013
+F-007,account,WeSaver OAuth가 실제 왕복하는가,yes,BLOCKED_WITH_EVIDENCE,SRC-CF-002,DEC-0002
+F-008,continuity,모바일·PC·PWA 상태가 이어지는가,yes,ASSESSED,SRC-OWN-004,DEC-0006
+F-009,performance,LCP·CLS·TBT 분포를 반복 관측하는가,yes,PARTIAL,SRC-PERF-001,DEC-0018
+F-010,offline,오프라인 임시저장과 재연결이 안전한가,yes,ASSESSED,SRC-OWN-004,DEC-0010
+F-011,accessibility,키보드·스크린리더 포커스가 완주되는가,yes,UNVERIFIED,SRC-OWN-005,DEC-0011
+F-012,japan,일본 지역·통화·시간대가 정확한가,yes,PARTIAL,SRC-OWN-006,DEC-0008
+F-013,moderation,신고·이의·삭제·복구가 운영자와 왕복되는가,yes,BLOCKED_WITH_EVIDENCE,SRC-OPS-001,DEC-0017
+F-014,privacy,가계부 원문이 광고·공개 데이터와 분리되는가,yes,ASSESSED,SRC-PRIV-001,DEC-0014
+F-015,ads,광고가 자연 결과와 표식·CMP로 분리되는가,yes,BLOCKED_WITH_EVIDENCE,SRC-ADS-001,DEC-0009
+F-016,legal,운영 주체·약관·개인정보·삭제 경로가 실제인가,yes,BLOCKED_WITH_EVIDENCE,SRC-LEGAL-001,DEC-0005
+F-017,source_rights,수집 출처의 권리와 철회가 기록되는가,yes,BLOCKED_WITH_EVIDENCE,SRC-CONT-001,DEC-0015
+F-018,recommendation,추천 근거와 초기화·거부가 보이는가,yes,UNVERIFIED,SRC-OWN-007,DEC-0016
+F-019,price_truth,예상 절약과 실제 지출이 분리되는가,yes,ASSESSED,SRC-OWN-008,DEC-0014
+F-020,points,포인트가 현금 출금·환전되지 않는가,yes,ASSESSED,SRC-OWN-009,DEC-0013
+F-021,restore,백업 checksum 복원 결과가 일치하는가,yes,BLOCKED_WITH_EVIDENCE,SRC-CF-003,DEC-0010
+F-022,support,비공개 문의가 실제로 수신·답변되는가,yes,BLOCKED_WITH_EVIDENCE,SRC-OPS-002,DEC-0005
+F-023,security,내부망·자격증명 URL·XSS가 차단되는가,yes,ASSESSED,SRC-SEC-001,DEC-0017
+F-024,observability,API 5xx·OAuth 실패·콘텐츠 만료가 관측되는가,yes,PARTIAL,SRC-OPS-003,DEC-0018
+F-025,competitive,톱10 비교군의 현재 자료가 동일 조건인가,yes,BLOCKED_WITH_EVIDENCE,SRC-WEB-001,DEC-0012
+F-026,trust,광고·자가신고·외부검증 배지가 구분되는가,yes,ASSESSED,SRC-OWN-010,DEC-0004
+F-027,empty,자료 없음·지역 미지원·로그인 전 상태가 설명되는가,yes,ASSESSED,SRC-OWN-011,DEC-0016
+F-028,recovery,실패 후 재시도·복구 행동이 한 단계로 안내되는가,yes,ASSESSED,SRC-OWN-012,DEC-0007
+F-029,merchant,점주·공급자 연결이 운영 승인 전 공개되지 않는가,yes,ASSESSED,SRC-CONT-002,DEC-0015
+F-030,content_scale,900/3000/10000 목표가 실제 공개 수량과 구분되는가,yes,ASSESSED,SRC-CONT-003,DEC-0004
+F-031,persona,가상 1000명 결과가 실제 사용자 증거로 오인되지 않는가,yes,ASSESSED,SRC-PERSONA-001,DEC-0014
+F-032,release,출시 인수에 외부 미확인이 남으면 blocked인가,yes,ASSESSED,SRC-REL-001,DEC-0020

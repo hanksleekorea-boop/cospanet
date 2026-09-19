@@ -1,0 +1,20 @@
+{"case_id":"EDGE-00001","platform":"mobile360","network":"online","account":"anonymous","content":"valid","input":"normal","workflow":"discover","expected_outcome":"public facts visible"}
+{"case_id":"EDGE-00002","platform":"mobile390","network":"slow","account":"anonymous","content":"stale","input":"unicode-ja","workflow":"discover","expected_outcome":"stale label and retry"}
+{"case_id":"EDGE-00003","platform":"pc1280","network":"offline","account":"owner","content":"valid","input":"normal","workflow":"save","expected_outcome":"local queue only; no false server success"}
+{"case_id":"EDGE-00004","platform":"pc1920","network":"reconnected","account":"owner","content":"valid","input":"normal","workflow":"save","expected_outcome":"idempotent sync"}
+{"case_id":"EDGE-00005","platform":"mobile360","network":"online","account":"other-user","content":"duplicate","input":"normal","workflow":"share","expected_outcome":"duplicate warning"}
+{"case_id":"EDGE-00006","platform":"mobile390","network":"online","account":"operator","content":"revoked","input":"normal","workflow":"delete","expected_outcome":"revoke propagation"}
+{"case_id":"EDGE-00007","platform":"pc1280","network":"online","account":"expired","content":"valid","input":"normal","workflow":"discover","expected_outcome":"reauth required"}
+{"case_id":"EDGE-00008","platform":"pc1920","network":"online","account":"anonymous","content":"expired","input":"normal","workflow":"discover","expected_outcome":"not actionable"}
+{"case_id":"EDGE-00009","platform":"mobile360","network":"offline","account":"owner","content":"valid","input":"empty","workflow":"share","expected_outcome":"validation error"}
+{"case_id":"EDGE-00010","platform":"mobile390","network":"online","account":"owner","content":"valid","input":"negative","workflow":"budget","expected_outcome":"reject negative expense"}
+{"case_id":"EDGE-00011","platform":"pc1280","network":"online","account":"owner","content":"valid","input":"oversize","workflow":"share","expected_outcome":"size limit error"}
+{"case_id":"EDGE-00012","platform":"pc1920","network":"slow","account":"operator","content":"stale","input":"unicode-ja","workflow":"report","expected_outcome":"safe partial load"}
+{"case_id":"EDGE-00013","platform":"mobile360","network":"online","account":"anonymous","content":"valid","input":"unicode-ja","workflow":"discover","expected_outcome":"Japanese text readable"}
+{"case_id":"EDGE-00014","platform":"mobile390","network":"reconnected","account":"other-user","content":"duplicate","input":"normal","workflow":"share","expected_outcome":"idempotent rejection"}
+{"case_id":"EDGE-00015","platform":"pc1280","network":"offline","account":"owner","content":"valid","input":"normal","workflow":"restore","expected_outcome":"restore deferred"}
+{"case_id":"EDGE-00016","platform":"pc1920","network":"online","account":"operator","content":"revoked","input":"normal","workflow":"restore","expected_outcome":"revocation wins"}
+{"case_id":"EDGE-00017","platform":"mobile360","network":"online","account":"anonymous","content":"valid","input":"normal","workflow":"report","expected_outcome":"login prompt without data leak"}
+{"case_id":"EDGE-00018","platform":"mobile390","network":"slow","account":"owner","content":"stale","input":"empty","workflow":"budget","expected_outcome":"no invented advice"}
+{"case_id":"EDGE-00019","platform":"pc1280","network":"online","account":"operator","content":"valid","input":"normal","workflow":"delete","expected_outcome":"audit event"}
+{"case_id":"EDGE-00020","platform":"pc1920","network":"reconnected","account":"owner","content":"valid","input":"normal","workflow":"share","expected_outcome":"server acknowledgement with evidence"}

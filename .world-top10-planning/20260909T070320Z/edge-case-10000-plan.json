@@ -1,0 +1,20 @@
+{
+  "schema_version":"edge-case-10000-plan/v1",
+  "run_id":"INTEL-20260909T070320Z",
+  "planned_count":10000,
+  "executed_count":20,
+  "status":"PARTIAL_SAMPLE_ONLY",
+  "generator":{"seed":"KOSPANET-20260909-X10","algorithm":"cartesian strata with stable hash","command":"node tools/generate-x10-edge-cases.mjs --seed KOSPANET-20260909-X10 --count 10000"},
+  "strata":[
+    {"axis":"platform","values":["mobile360","mobile390","pc1280","pc1920"]},
+    {"axis":"network","values":["online","slow","offline","reconnected"]},
+    {"axis":"account","values":["anonymous","owner","other-user","operator","expired"]},
+    {"axis":"content","values":["valid","stale","expired","duplicate","revoked"]},
+    {"axis":"input","values":["normal","empty","unicode-ja","negative","oversize"]},
+    {"axis":"workflow","values":["discover","save","share","report","delete","restore","budget"]}
+  ],
+  "expected_distribution":"균등 조합 후 위험도가 높은 권한·삭제·출처·오프라인 조합을 2배 oversample",
+  "sample_file":"edge-case-10000-cases.jsonl",
+  "sample_limit_reason":"이 실행에서는 생성기 구현·실행 자체를 만들지 않고 규칙과 20개 검토 표본만 보존",
+  "completion_gate":"실행 10000건, 중복 0, 모든 사례에 expected_outcome·actual_outcome·evidence_id"
+}

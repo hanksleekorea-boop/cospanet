@@ -1,0 +1,24 @@
+{
+  "schema_version":"existing-plan-integration/v1",
+  "run_id":"INTEL-20260909T070320Z",
+  "documents_registered":13,
+  "document_status_assignment_percent":100,
+  "atomic_exhaustion_status":"PARTIAL",
+  "records":[
+    {"doc":"PRODUCT_PLAN.md","status":"RETAINED","reason":"제품·포인트·굿딜 원문 보존","integrated_ids":["REQ-002","REQ-003","DEC-0013","DEC-0014"]},
+    {"doc":"DEVELOPMENT_EXECUTION_PLAN.md","status":"RETAINED","reason":"기존 실행 카드·시험 근거 보존","integrated_ids":["TASK-1-001","TASK-1-003","TASK-2-001"]},
+    {"doc":"KOSPANET_MASTER_PRODUCT_DEVELOPMENT_PLAN.md","status":"CANONICAL_REFERENCE","reason":"현재 제품 범위 포인터","integrated_ids":["REQ-001","REQ-002","REQ-004"]},
+    {"doc":"KOSPANET_MATURE_COMMERCIAL_PRODUCT_PLAN_3STAGE.md","status":"MERGED_REFERENCE","reason":"상용 관문과 사람 증거","integrated_ids":["REQ-005","DEC-0005","DEC-0011"]},
+    {"doc":"KOSPANET_MATURE_COMMERCIAL_DEVELOPMENT_PLAN_3STAGE.md","status":"MERGED_REFERENCE","reason":"단계 카드·예상 관문","integrated_ids":["TASK-1-004","TASK-5-001"]},
+    {"doc":"GOODDEAL_CORE_PRODUCT_PLAN.md","status":"RETAINED_DOMAIN","reason":"공동구매 전용 아님 경계","integrated_ids":["REQ-002"]},
+    {"doc":"KOSPANET_CONTENT_100_THREE_STAGE_PLAN.md","status":"MERGED_REFERENCE","reason":"콘텐츠 수량·권리·신선도","integrated_ids":["REQ-002","DEC-0004","DEC-0015"]},
+    {"doc":"KOSPANET_AUTOMATED_CONTENT_ACQUISITION_FIVE_LEVEL_PLAN.md","status":"MERGED_REFERENCE","reason":"수집 등급·철회","integrated_ids":["TASK-3-001"]},
+    {"doc":"KOSPANET_JAPAN_VALUE_POINT_PLAN.md","status":"RETAINED_POLICY","reason":"비현금 포인트 경계","integrated_ids":["DEC-0013"]},
+    {"doc":"KOSPANET_HOUSEHOLD_BUDGET_SAVINGS_COACH_PLAN.md","status":"RETAINED_POLICY","reason":"가계부·절약 분리","integrated_ids":["REQ-003","DEC-0014"]},
+    {"doc":"KOSPANET_JAPAN_OFFLINE_VALUE_TARGET_CATALOG.md","status":"RETAINED_CATALOG","reason":"일본 생활 대상 범위","integrated_ids":["DEC-0008"]},
+    {"doc":"PROJECT_EVOLUTION_HISTORY.md","status":"RETAINED_HISTORY","reason":"방향 변경·폐기 기록","integrated_ids":[]},
+    {"doc":"PROJECT_IDEA_ARCHIVE.json","status":"RETAINED_ARCHIVE","reason":"잠재·폐기 아이디어 보관","integrated_ids":[]}
+  ],
+  "unresolved_conflicts":3,
+  "unmapped_atomic_items":"unknown; requires line-level extraction"
+}

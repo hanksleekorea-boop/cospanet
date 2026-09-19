@@ -1,0 +1,15 @@
+{
+  "schema_version":"world-top10-run-manifest/v1",
+  "run_id":"INTEL-20260909T070320Z",
+  "generated_at_utc":"2026-09-09T07:03:20Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"run-manifest",
+  "mode":"END_TO_END",
+  "x10_one_shot":true,
+  "active_engines":["B","C"],
+  "inactive_engines":["A"],
+  "records":[{"gate":"G0","status":"PASS"},{"gate":"G1","status":"PARTIAL"},{"gate":"G2","status":"PARTIAL_REUSED"},{"gate":"G3","status":"PASS_HISTORICAL"},{"gate":"G4","status":"PARTIAL"},{"gate":"G5","status":"PASS_DRAFT"},{"gate":"G6","status":"PASS_DRAFT"},{"gate":"G7","status":"PASS_DRAFT"},{"gate":"G8","status":"PARTIAL"}],
+  "counts":{"new_files":78,"reused_prior_run":5,"top10":10,"gaps":20,"requirements_seed":5,"decision_cells":20,"test_cases":20,"edge_samples":20,"priority_items":20,"ai_only_items":20},
+  "unknowns":["current rank","all 800 candidates","1600 metrics","real OAuth/D1/DNS","human and Android evidence"],
+  "warnings":["new files are analysis artifacts only","not X10_COMPLETE","not product deployment"]
+}

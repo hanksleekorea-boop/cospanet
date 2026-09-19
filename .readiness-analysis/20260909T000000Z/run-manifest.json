@@ -1,0 +1,14 @@
+{
+  "schema":"readiness-run-manifest/v1",
+  "runId":"CRH-20260909T000000Z",
+  "assessedAt":"2026-09-09",
+  "status":"blocked",
+  "scope":"all",
+  "engineReference":".readiness-analysis/20260820T043957Z/engine/readiness-engine.mjs",
+  "reason":"current external Cloudflare/OAuth/D1/DNS and Android evidence is incomplete; historical engine result is preserved and not promoted",
+  "outputsCreatedInsideReadinessFolder":true,
+  "productChanges":0,
+  "gitChangesOutsideReadinessFolder":0,
+  "unknowns":["D1 binding","WeSaver OAuth round trip","custom DNS","real Android","real content","operator/legal evidence"],
+  "warnings":["not a 99% or production approval"]
+}

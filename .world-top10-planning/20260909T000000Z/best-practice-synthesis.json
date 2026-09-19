@@ -1,0 +1,10 @@
+{
+  "schema_version":"best-practice-synthesis/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"best-practice-synthesis",
+  "source_artifact_ids":["SRC-COMP-001","SRC-COMP-002"],
+  "records":[{"id":"BP-001","practice":"인기·확인·운영검토·광고를 별도 표시","source":"Slickdeals/HotUKDeals/Dealabs/DealNews","adopt":"yes"},{"id":"BP-002","practice":"온라인·매장·지점·관측시각을 구조화","source":"Flipp/Too Good To Go/Olio","adopt":"yes"},{"id":"BP-003","practice":"판매자·관계자 제보를 별도 표시·검토","source":"Dealabs/DesiDime/OzBargain","adopt":"yes"},{"id":"BP-004","practice":"가격·쿠폰·배송·규격을 분리","source":"Pepper.pl/ShopSavvy","adopt":"yes"}],
+  "counts":{"practices":4},"unknowns":[],"warnings":["source behaviour is not copied verbatim"]
+}

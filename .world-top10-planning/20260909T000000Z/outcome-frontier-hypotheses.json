@@ -1,0 +1,10 @@
+{
+  "schema_version":"outcome-frontier-hypotheses/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"outcome-frontier-hypotheses",
+  "source_artifact_ids":["best-practice-synthesis.json","gap-register.json"],
+  "records":[{"id":"HYP-0001","hypothesis":"딜의 조건·지점·시각을 가계부 실제 지출과 연결하면 단순 딜 목록보다 재방문 가치가 높다","validation":"실제 사용자 10명, 동의 기반 2주 파일럿","stage":"CHALLENGER","risk":"작은 표본·개인정보"},{"id":"HYP-0002","hypothesis":"미확인·광고·관측을 분리하면 신뢰가 올라간다","validation":"설명 이해도·오해율 비교","stage":"EXPLORATORY","risk":"운영 비용"}],
+  "counts":{"hypotheses":2},"unknowns":["real user outcomes"],"warnings":["AI/persona simulations are not real users"]
+}

@@ -1,0 +1,15 @@
+{
+  "schema":"crh-analysis-result/v1",
+  "engineVersion":"1.0.1-reference-not-rerun",
+  "generatedAt":"2026-09-09T00:00:00Z",
+  "assessedAt":"2026-09-09",
+  "project":{"name":"코스파넷","status":"blocked_external"},
+  "lens":{"name":"core","version":"2.1.0","itemCount":197,"gateCount":40},
+  "mobile":{"score":null,"status":"blocked_external","reason":"real Android, OAuth, D1, legal/operator evidence incomplete"},
+  "web":{"score":null,"status":"blocked_external","reason":"custom DNS, D1, OAuth, legal/operator evidence incomplete"},
+  "direction":{"score":null,"status":"not_calculated_current","historicalReference":"33.33 on 2026-08-20"},
+  "composite":{"score":null,"axesUsed":0,"grade":{"code":"BLOCKED_EXTERNAL","name":"외부 관문 차단"}},
+  "historicalReference":{"compositeScore":46.21,"assessedAt":"2026-08-20","path":"../20260820T043957Z/readiness-analysis.json"},
+  "unknowns":["all current 197-item evidence not re-promoted from historical run"],
+  "warnings":["null is not zero","historical score is not current acceptance"]
+}

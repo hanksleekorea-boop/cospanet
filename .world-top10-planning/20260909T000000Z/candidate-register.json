@@ -1,0 +1,23 @@
+{
+  "schema_version": "candidate-register/v1",
+  "run_id": "INTEL-20260909T000000Z",
+  "generated_at_utc": "2026-09-09T00:00:00Z",
+  "project_fingerprint": "kospanet-existing-worktree",
+  "artifact_type": "candidate-register",
+  "source_artifact_ids": ["SRC-COMP-001", "SRC-COMP-002"],
+  "records": [
+    {"id":"CAND-001","name":"Slickdeals","catalogNumbers":[33,496],"kind":"direct","status":"historical_official_evidence"},
+    {"id":"CAND-002","name":"HotUKDeals","catalogNumbers":[33,496],"kind":"direct","status":"historical_official_evidence"},
+    {"id":"CAND-003","name":"Dealabs","catalogNumbers":[33,496],"kind":"direct","status":"historical_official_evidence"},
+    {"id":"CAND-004","name":"mydealz","catalogNumbers":[33,496],"kind":"direct","status":"historical_official_evidence"},
+    {"id":"CAND-005","name":"Pepper.pl","catalogNumbers":[33,496],"kind":"direct","status":"historical_official_evidence"},
+    {"id":"CAND-006","name":"Flipp","catalogNumbers":[495,496],"kind":"adjacent","status":"historical_official_evidence"},
+    {"id":"CAND-007","name":"ShopSavvy","catalogNumbers":[9,496],"kind":"adjacent","status":"historical_official_evidence"},
+    {"id":"CAND-008","name":"Google Shopping","catalogNumbers":[9,496],"kind":"adjacent","status":"historical_official_evidence"},
+    {"id":"CAND-009","name":"Honey","catalogNumbers":[9,496],"kind":"adjacent","status":"historical_official_evidence"},
+    {"id":"CAND-010","name":"Ibotta","catalogNumbers":[496],"kind":"adjacent","status":"historical_official_evidence"}
+  ],
+  "counts": {"candidate_records": 10, "current_refresh": 0, "historical_reused": 10},
+  "unknowns": ["current rank/market share", "independent current top10 proof"],
+  "warnings": ["not a market ranking"]
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "integrated-intelligence-run-control/v1",
+  "run_id": "INTEL-20260909T070320Z",
+  "generated_at_utc": "2026-09-09T07:03:20Z",
+  "mode": "END_TO_END",
+  "x10_one_shot": true,
+  "project": {
+    "name": "코스파넷",
+    "workspace": "D:/Desktop/챗지피티프로젝트들/코스파넷",
+    "identity": "일본 생활 가성비 발견·공유·가계부·절약 코치"
+  },
+  "public_url_candidates": [
+    "https://kospanet.scanners.cc/",
+    "https://dealcatch-cityhunter.koreabike1234.chatgpt.site/"
+  ],
+  "active_engines": ["ENGINE_B_WORLD_TOP10_PLAN", "ENGINE_C_READINESS_AUDIT"],
+  "inactive_engines": ["ENGINE_A_TOP3"],
+  "selection_reason": "첨부 v3.2가 세계 톱10·제품기획·개발계획·출시준비를 동시에 요구하므로 END_TO_END를 선택",
+  "read_only_scope": {
+    "product_code_changed": 0,
+    "configuration_changed": 0,
+    "git_write": 0,
+    "deployment": 0,
+    "external_account_action": 0,
+    "analysis_artifact_writes": "this_run_folder_only"
+  },
+  "reused_artifacts": [
+    {"path":"../20260909T000000Z/world-top10-selection.json","reason":"2026-08-24 historical top10 lock; current rank not asserted"},
+    {"path":"../20260909T000000Z/benchmark-matrix.json","reason":"existing normalized comparison; not refreshed market evidence"},
+    {"path":"../20260909T000000Z/gap-register.json","reason":"existing 20-gap register"},
+    {"path":"../20260909T000000Z/requirements-register.json","reason":"existing atomic requirement seed"},
+    {"path":"../../.readiness-analysis/20260909T000000Z/readiness-analysis.json","reason":"historical/current-boundary reference; not replaced"}
+  ],
+  "new_artifacts": [
+    "x10-workload-baseline.json", "x10-workload-ledger.json", "x10-coverage-matrix.csv",
+    "x10-shortfall-and-substitution.md", "decision-cell-register.json",
+    "requirement-exhaustion-report.md", "task-readiness-register.json", "test-case-register.json",
+    "negative-sample-100-report.md", "edge-case-10000-plan.json", "edge-case-10000-cases.jsonl",
+    "edge-case-10000-findings.md", "human-action-packet.md", "one-shot-completeness-matrix.md",
+    "low-skill-ai-execution-handbook.md", "artifact-integrity-report.md", "existing-plan-inventory.md",
+    "existing-plan-integration.json", "plan-conflict-register.md", "integrated-product-plan.md",
+    "integrated-development-plan-5-stages.md", "benchmark-ontology.md", "benchmark-coverage-matrix.csv",
+    "metric-family-register.md", "benchmark-saturation-log.md", "benchmark-quality-audit.md", "BENCHMARK_INDEX.md"
+  ],
+  "new_file_count": 78,
+  "engine_status": {
+    "G0_TARGET_LOCK": "PASS",
+    "G1_EVIDENCE_READY": "PARTIAL",
+    "G2_CANDIDATE_POOL": "PARTIAL_REUSED",
+    "G3_TOP10_LOCK": "PASS_HISTORICAL_NOT_CURRENT",
+    "G4_BENCHMARK": "PARTIAL",
+    "G5_GAP": "PASS_DRAFT",
+    "G6_PRODUCT_PLAN": "PASS_DRAFT",
+    "G7_DEVELOPMENT_PLAN": "PASS_DRAFT",
+    "G8_QUALITY": "PARTIAL"
+  },
+  "external_blocks": [
+    "D1 binding and account path",
+    "WeSaver Google OAuth client/callback/secret verification",
+    "kospanet.scanners.cc DNS/Worker route",
+    "operator/legal/content-rights evidence",
+    "one authorized idle Android device"
+  ],
+  "final_status": "X10_PARTIAL_SCOPE|PARTIAL_EVIDENCE|BLOCKED_EXTERNAL"
+}

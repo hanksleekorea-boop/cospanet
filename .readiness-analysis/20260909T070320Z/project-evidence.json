@@ -1,0 +1,15 @@
+{
+  "schema":"crh-project-evidence/v1",
+  "project":{"name":"코스파넷","workspace":"D:/Desktop/챗지피티프로젝트들/코스파넷"},
+  "assessed_at":"2026-09-09",
+  "platforms":["mobile web/PWA","PC web","Cloudflare Worker candidate"],
+  "evidence":[
+    {"id":"E-001","type":"local","claim":"build·API·UI·역사 회귀 검사 기록 존재","status":"observed","path":"README.md"},
+    {"id":"E-002","type":"public","claim":"기존 Sites 정적 경로의 과거 HTTP 확인","status":"historical","path":"README.md"},
+    {"id":"E-003","type":"external","claim":"Cloudflare Worker latest version exists; D1 not bound","status":"blocked_external","path":".world-top10-planning/20260909T000000Z/gap-register.json"},
+    {"id":"E-004","type":"external","claim":"kospanet.scanners.cc DNS unresolved","status":"blocked_external","path":".world-top10-planning/20260909T000000Z/gap-register.json"},
+    {"id":"E-005","type":"device","claim":"이번 run 실제 Android 시험 미실시","status":"not_run","path":".world-top10-planning/20260909T070320Z/human-action-packet.md"},
+    {"id":"E-006","type":"market","claim":"ShopSavvy·Google·Ibotta·Flipp 공식 표면을 2026-09-09 확인","status":"observed_sample","path":".world-top10-planning/20260909T070320Z/benchmark-saturation-log.md"}
+  ],
+  "separation_rules":{"planned_is_not_implemented":true,"virtual_is_not_real_user":true,"unknown_is_not_zero":true,"historical_is_not_current":true}
+}

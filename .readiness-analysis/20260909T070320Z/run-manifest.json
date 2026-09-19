@@ -1,0 +1,17 @@
+{
+  "schema":"crh-run-manifest/v1",
+  "run_id":"CRH-20260909T070320Z",
+  "generated_at":"2026-09-09T07:03:20Z",
+  "project_name":"코스파넷",
+  "engine":"Readiness Hub core 2.1.0",
+  "lens":{"name":"core","version":"2.1.0","items":197,"gates":40},
+  "mode":"END_TO_END",
+  "input":"project-evidence.json",
+  "result":"readiness-analysis.json",
+  "markdown":"readiness-analysis.md",
+  "audit":"readiness-analysis.audit.md",
+  "execution_status":"REFERENCE_NOT_RERUN",
+  "reason":"현재 연결에서 엔진 공급 파일·D1 binding·외부 계정·실기기 증거가 완결되지 않아 원점수 재산출을 하지 않음",
+  "external_writes":0,
+  "unknowns":["current 197-item evidence promotion","real OAuth round trip","D1 binding","custom DNS","operator/legal evidence","Android device run"]
+}

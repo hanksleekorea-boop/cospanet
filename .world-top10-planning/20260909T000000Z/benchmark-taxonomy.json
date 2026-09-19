@@ -1,0 +1,12 @@
+{
+  "schema_version":"benchmark-taxonomy/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"benchmark-taxonomy",
+  "source_artifact_ids":["SRC-COMP-002"],
+  "records":[{"id":"FIELD-01","name":"핵심 과업·가치","weight":20},{"id":"FIELD-02","name":"발견·개인화","weight":15},{"id":"FIELD-03","name":"설명·신뢰·신선도","weight":15},{"id":"FIELD-04","name":"모바일·PC 연속성","weight":10},{"id":"FIELD-05","name":"성능·안정성","weight":10},{"id":"FIELD-06","name":"저장·공유·삭제","weight":10},{"id":"FIELD-07","name":"운영·보안·법적 경계","weight":10},{"id":"FIELD-08","name":"수익화·확장성","weight":10}],
+  "counts":{"fields":8,"weightTotal":100},
+  "unknowns":[],
+  "warnings":["not a market ranking"]
+}

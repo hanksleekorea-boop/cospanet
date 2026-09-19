@@ -1,0 +1,18 @@
+{
+  "schema_version":"five-stage-detail-ledger/v1",
+  "run_id":"INTEL-20260909T072835Z",
+  "generated_at_utc":"2026-09-09T07:28:35Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"five-stage-detail-ledger",
+  "source_artifact_ids":["../20260909T070320Z/integrated-development-plan-5-stages.md","b3f3c40c-df64-4e4f-b7c2-ce2d5b7202bf"],
+  "records":[
+    {"stage_id":"STAGE-1-BASELINE","stage_sections":24,"task_cards":3,"ready_cards":0,"discovery_cards":3,"micro_steps_planned":36,"tests_planned":48,"tests_executed":0,"status":"DISCOVERY_REQUIRED"},
+    {"stage_id":"STAGE-2-FOUNDATION","stage_sections":24,"task_cards":3,"ready_cards":0,"discovery_cards":3,"micro_steps_planned":36,"tests_planned":36,"tests_executed":0,"status":"DISCOVERY_REQUIRED"},
+    {"stage_id":"STAGE-3-CORE","stage_sections":24,"task_cards":3,"ready_cards":0,"discovery_cards":3,"micro_steps_planned":36,"tests_planned":36,"tests_executed":0,"status":"DISCOVERY_REQUIRED"},
+    {"stage_id":"STAGE-4-QUALITY","stage_sections":24,"task_cards":3,"ready_cards":0,"discovery_cards":3,"micro_steps_planned":36,"tests_planned":36,"tests_executed":0,"status":"DISCOVERY_REQUIRED"},
+    {"stage_id":"STAGE-5-RELEASE","stage_sections":24,"task_cards":3,"ready_cards":0,"discovery_cards":3,"micro_steps_planned":36,"tests_planned":48,"tests_executed":0,"status":"DISCOVERY_REQUIRED"}
+  ],
+  "task_card_contract":{"required_fields":96,"filled_ready_cards":0,"template_available":true,"unknowns_must_have_discovery":true},
+  "completion":{"section_coverage_percent":100,"task_96_field_coverage_percent":0,"micro_step_connection_percent":0,"test_connection_percent":0,"evidence_connection_percent":0,"status":"NOT_COMPLETE"},
+  "reason":"v3.3는 모든 READY 카드의 96필드와 실제 증거를 요구한다. 외부 입력과 세부 파일 확인 전에는 카드를 READY로 올리지 않는다."
+}

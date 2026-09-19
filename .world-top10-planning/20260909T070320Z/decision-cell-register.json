@@ -1,0 +1,27 @@
+{
+  "schema_version":"decision-cell-register/v1",
+  "run_id":"INTEL-20260909T070320Z",
+  "records":[
+    {"id":"DEC-0001","topic":"D1 경로","decision":"기존 D1 재사용 또는 안전한 대체 계정 확인","owner":"Cloudflare 계정 소유자","evidence":"GAP-001","acceptance":"공개 A/B 계정 재조회","status":"BLOCKED_EXTERNAL"},
+    {"id":"DEC-0002","topic":"OAuth","decision":"WeSaver 프로젝트 client/callback을 공식 콘솔에서 확인","owner":"Google Cloud 관리자","evidence":"GAP-002","acceptance":"state/nonce/PKCE 왕복","status":"BLOCKED_EXTERNAL"},
+    {"id":"DEC-0003","topic":"DNS","decision":"kospanet.scanners.cc route 연결","owner":"Cloudflare 관리자","evidence":"GAP-003","acceptance":"HTTPS 200 + worker route","status":"BLOCKED_EXTERNAL"},
+    {"id":"DEC-0004","topic":"콘텐츠 권리","decision":"공식·허가 출처만 공개","owner":"운영 책임자","evidence":"GAP-004","acceptance":"source_rights/fact_check 만료 없음","status":"WAITING_EXTERNAL"},
+    {"id":"DEC-0005","topic":"운영 주체","decision":"문의 채널·응답 SLA 공개","owner":"사업 운영자","evidence":"GAP-005","acceptance":"실제 수신·답변 왕복","status":"WAITING_EXTERNAL"},
+    {"id":"DEC-0006","topic":"Android","decision":"두 기기 중 승인된 유휴 1대만 선택","owner":"사용자","evidence":"GAP-006","acceptance":"ADB device + Chrome/PWA 흐름","status":"WAITING_EXTERNAL"},
+    {"id":"DEC-0007","topic":"알림","decision":"동의·중복 방지·해제 정책","owner":"제품 운영자","evidence":"GAP-007","acceptance":"subscribe/unsubscribe/retry","status":"PLANNED"},
+    {"id":"DEC-0008","topic":"지점","decision":"체인·지점·좌표 정규화 키","owner":"콘텐츠 운영자","evidence":"GAP-008","acceptance":"동일 체인 다른 지점 분리","status":"PLANNED"},
+    {"id":"DEC-0009","topic":"광고","decision":"AdSense 승인 전 광고 위치 비활성","owner":"게시자","evidence":"GAP-009","acceptance":"CMP·표식·off","status":"WAITING_EXTERNAL"},
+    {"id":"DEC-0010","topic":"복구","decision":"암호화 백업과 checksum 보존","owner":"운영자","evidence":"GAP-010","acceptance":"재다운로드·복원 일치","status":"BLOCKED_EXTERNAL"},
+    {"id":"DEC-0011","topic":"접근성","decision":"TalkBack/Narrator 실제 사람 시험","owner":"QA 담당자","evidence":"GAP-011","acceptance":"오류율·완주율 기록","status":"WAITING_EXTERNAL"},
+    {"id":"DEC-0012","topic":"경쟁군","decision":"현재 공식 페이지 재확인일 갱신","owner":"분석 담당자","evidence":"GAP-012","acceptance":"출처·확인일·반대증거","status":"PLANNED"},
+    {"id":"DEC-0013","topic":"포인트","decision":"비현금 양도만 첫 출시 허용","owner":"사업·법무","evidence":"GAP-013","acceptance":"출금·환전 거부","status":"PLANNED"},
+    {"id":"DEC-0014","topic":"가계부","decision":"예상 절약과 확정 지출 분리","owner":"제품 운영자","evidence":"GAP-014","acceptance":"예상액이 지출로 저장되지 않음","status":"PLANNED"},
+    {"id":"DEC-0015","topic":"자동수집","decision":"승인 원천·사진만 처리","owner":"콘텐츠 운영자","evidence":"GAP-015","acceptance":"철회 전파·자동공개 false","status":"WAITING_EXTERNAL"},
+    {"id":"DEC-0016","topic":"개인화","decision":"설명·초기화·off 제공","owner":"제품 운영자","evidence":"GAP-016","acceptance":"추천 근거 노출","status":"PLANNED"},
+    {"id":"DEC-0017","topic":"모더레이션","decision":"5종 실운영 사건 왕복","owner":"운영 책임자","evidence":"GAP-017","acceptance":"신고→조치→이의→복구","status":"WAITING_EXTERNAL"},
+    {"id":"DEC-0018","topic":"관측","decision":"LCP/CLS/TBT와 API 오류 분리","owner":"개발·운영","evidence":"GAP-018","acceptance":"반복 분포 대시보드","status":"PLANNED"},
+    {"id":"DEC-0019","topic":"삭제","decision":"계정·콘텐츠·감사로그 보존정책","owner":"법무·운영","evidence":"GAP-019","acceptance":"삭제 후 복구 범위 명시","status":"BLOCKED_EXTERNAL"},
+    {"id":"DEC-0020","topic":"수익화","decision":"광고·제휴·자연 결과 시각적 분리","owner":"사업 운영자","evidence":"GAP-020","acceptance":"광고 승인·동의·off","status":"WAITING_EXTERNAL"}
+  ],
+  "counts":{"total":20,"blocked_or_waiting":14,"planned":6}
+}

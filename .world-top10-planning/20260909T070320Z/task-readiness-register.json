@@ -1,0 +1,21 @@
+{
+  "schema_version":"task-readiness-register/v1",
+  "run_id":"INTEL-20260909T070320Z",
+  "fields_contract":{"legacy_verified":32,"v3_2_target":64,"missing_fields_per_card":32},
+  "records":[
+    {"task_id":"TASK-1-001","stage":1,"name":"D1 바인딩","status":"BLOCKED_EXTERNAL","required_inputs":["D1 id","binding name","migration"],"acceptance":"A/B 공개 재조회","test_ids":["TEST-001","TEST-002"],"evidence_slot":"DONE-O"},
+    {"task_id":"TASK-1-002","stage":1,"name":"WeSaver OAuth","status":"BLOCKED_EXTERNAL","required_inputs":["client id","callback","secret reference"],"acceptance":"state/nonce/PKCE 왕복","test_ids":["TEST-003","TEST-004"],"evidence_slot":"DONE-O"},
+    {"task_id":"TASK-1-003","stage":1,"name":"온라인·매장 제보","status":"PLANNED","required_inputs":["source","observed_at","location","price"],"acceptance":"검토 전 공개 차단","test_ids":["TEST-005","TEST-006"],"evidence_slot":"DONE-B/DONE-O"},
+    {"task_id":"TASK-1-004","stage":1,"name":"운영 검토·신고·삭제","status":"WAITING_EXTERNAL","required_inputs":["operator","SLA","restore policy"],"acceptance":"실제 사건 왕복","test_ids":["TEST-007","TEST-008"],"evidence_slot":"DONE-O"},
+    {"task_id":"TASK-1-005","stage":1,"name":"Custom DNS","status":"BLOCKED_EXTERNAL","required_inputs":["zone","route","TLS"],"acceptance":"지정 도메인 HTTPS 200","test_ids":["TEST-009"],"evidence_slot":"DONE-B"},
+    {"task_id":"TASK-2-001","stage":2,"name":"신선도 엔진","status":"PLANNED","required_inputs":["observed_at","expires_at","recheck queue"],"acceptance":"오래됨·재확인 표시","test_ids":["TEST-010"],"evidence_slot":"DONE-A/DONE-B"},
+    {"task_id":"TASK-2-002","stage":2,"name":"앱 알림함","status":"PLANNED","required_inputs":["consent","dedupe key","unsubscribe"],"acceptance":"동의·중복·해제","test_ids":["TEST-011"],"evidence_slot":"DONE-B"},
+    {"task_id":"TASK-2-003","stage":2,"name":"가계부 파일럿","status":"WAITING_EXTERNAL","required_inputs":["consent","sample users","privacy review"],"acceptance":"실제 절약 행동 검증","test_ids":["TEST-012"],"evidence_slot":"DONE-U"},
+    {"task_id":"TASK-3-001","stage":3,"name":"공식 공급자","status":"WAITING_EXTERNAL","required_inputs":["rights","feed","revocation"],"acceptance":"권리·철회·만료","test_ids":["TEST-013"],"evidence_slot":"DONE-O"},
+    {"task_id":"TASK-3-002","stage":3,"name":"전국 지점","status":"PLANNED","required_inputs":["prefecture","store id","coordinates"],"acceptance":"지역·지점 분리","test_ids":["TEST-014"],"evidence_slot":"DONE-O"},
+    {"task_id":"TASK-4-001","stage":4,"name":"광고 CMP","status":"WAITING_EXTERNAL","required_inputs":["publisher","consent","ad labels"],"acceptance":"광고·자연결과 분리","test_ids":["TEST-015"],"evidence_slot":"DONE-E/DONE-O"},
+    {"task_id":"TASK-5-001","stage":5,"name":"Android·접근성·복구","status":"WAITING_EXTERNAL","required_inputs":["approved idle phone","TalkBack","backup checksum"],"acceptance":"실기기·복구 인수","test_ids":["TEST-016","TEST-017"],"evidence_slot":"DONE-D/DONE-E/DONE-O"}
+  ],
+  "counts":{"tasks":12,"ready":0,"planned":5,"waiting_external":6,"blocked_external":3},
+  "status":"NOT_READY"
+}

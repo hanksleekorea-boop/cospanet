@@ -1,0 +1,24 @@
+{
+  "schema_version":"development-task-cards/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"development-task-cards",
+  "source_artifact_ids":["requirements-register.json","gap-register.json"],
+  "records":[
+    {"task_id":"TASK-1-001","stage":1,"name":"D1 전용 경로 확정·바인딩","user_result":"공개 딜이 계정별로 저장됨","status":"WAITING_EXTERNAL","doneEvidence":"DONE-O"},
+    {"task_id":"TASK-1-002","stage":1,"name":"WeSaver OAuth 연결","user_result":"Google 로그인 후 계정이 복원됨","status":"WAITING_EXTERNAL","doneEvidence":"DONE-O"},
+    {"task_id":"TASK-1-003","stage":1,"name":"온라인/매장 공개 제보","user_result":"다른 계정이 딜을 찾음","status":"PLANNED","doneEvidence":"DONE-B/DONE-O"},
+    {"task_id":"TASK-1-004","stage":1,"name":"운영 검토·신고·삭제","user_result":"문제가 있는 글이 처리됨","status":"WAITING_EXTERNAL","doneEvidence":"DONE-O"},
+    {"task_id":"TASK-1-005","stage":1,"name":"custom DNS 연결","user_result":"지정 도메인으로 서비스 접속","status":"WAITING_EXTERNAL","doneEvidence":"DONE-B"},
+    {"task_id":"TASK-2-001","stage":2,"name":"관측·신선도 엔진","user_result":"오래된 딜이 재확인 표시됨","status":"PLANNED","doneEvidence":"DONE-A/DONE-B"},
+    {"task_id":"TASK-2-002","stage":2,"name":"앱 내 알림함","user_result":"검토·댓글·정정 결과를 확인","status":"PLANNED","doneEvidence":"DONE-B"},
+    {"task_id":"TASK-2-003","stage":2,"name":"가계부 절약 조언 파일럿","user_result":"실제 지출을 기준으로 절약 행동 제안","status":"WAITING_EXTERNAL","doneEvidence":"DONE-U"},
+    {"task_id":"TASK-3-001","stage":3,"name":"권리 승인 공식 공급자","user_result":"출처 있는 콘텐츠가 갱신됨","status":"WAITING_EXTERNAL","doneEvidence":"DONE-O"},
+    {"task_id":"TASK-3-002","stage":3,"name":"지역·지점 확장","user_result":"일본 지역별 굿딜을 구분","status":"PLANNED","doneEvidence":"DONE-O"},
+    {"task_id":"TASK-4-001","stage":4,"name":"광고·CMP 승인","user_result":"광고와 콘텐츠가 분리됨","status":"WAITING_EXTERNAL","doneEvidence":"DONE-E/DONE-O"},
+    {"task_id":"TASK-5-001","stage":5,"name":"Android·접근성·복구 인수","user_result":"실기기와 복구가 확인됨","status":"WAITING_EXTERNAL","doneEvidence":"DONE-D/DONE-E/DONE-O"}
+  ],
+  "counts":{"tasks":12,"waitingExternal":8,"planned":4},
+  "unknowns":["dates depend on account/operator access"],"warnings":["task card completion is not product completion"]
+}

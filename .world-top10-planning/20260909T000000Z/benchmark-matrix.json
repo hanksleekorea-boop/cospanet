@@ -1,0 +1,17 @@
+{
+  "schema_version":"benchmark-matrix/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"benchmark-matrix",
+  "source_artifact_ids":["SRC-COMP-002"],
+  "records":[
+    {"service":"코스파넷","role":"ours","scores":{"FIELD-01":3,"FIELD-02":2,"FIELD-03":2,"FIELD-04":3,"FIELD-05":4,"FIELD-06":3,"FIELD-07":1,"FIELD-08":1},"evidence":"current local/public mixed; external gates unknown"},
+    {"service":"Slickdeals","role":"benchmark","scores":{"FIELD-01":4,"FIELD-02":4,"FIELD-03":4,"FIELD-04":4,"FIELD-05":3,"FIELD-06":4,"FIELD-07":3,"FIELD-08":4},"evidence":"historical official evidence"},
+    {"service":"HotUKDeals","role":"benchmark","scores":{"FIELD-01":4,"FIELD-02":4,"FIELD-03":4,"FIELD-04":4,"FIELD-05":3,"FIELD-06":4,"FIELD-07":3,"FIELD-08":3},"evidence":"historical official evidence"},
+    {"service":"Dealabs","role":"benchmark","scores":{"FIELD-01":4,"FIELD-02":4,"FIELD-03":4,"FIELD-04":4,"FIELD-05":3,"FIELD-06":4,"FIELD-07":3,"FIELD-08":3},"evidence":"historical official evidence"}
+  ],
+  "counts":{"services":4,"fields":8},
+  "unknowns":["current external service measurements"],
+  "warnings":["scores are normalized comparisons, not user research"]
+}

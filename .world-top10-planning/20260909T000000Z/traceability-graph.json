@@ -1,0 +1,10 @@
+{
+  "schema_version":"traceability-graph/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"traceability-graph",
+  "source_artifact_ids":["gap-register.json","requirements-register.json","development-task-cards.json"],
+  "records":[{"from":"SRC-CF-001","to":"GAP-001","kind":"evidence_to_gap"},{"from":"GAP-001","to":"REQ-001","kind":"gap_to_requirement"},{"from":"REQ-001","to":"TASK-1-001","kind":"requirement_to_task"},{"from":"TASK-1-001","to":"G01","kind":"task_to_acceptance"},{"from":"GAP-004","to":"REQ-002","kind":"gap_to_requirement"},{"from":"REQ-002","to":"TASK-1-003","kind":"requirement_to_task"}],
+  "counts":{"edges":6},"unknowns":[],"warnings":[]
+}

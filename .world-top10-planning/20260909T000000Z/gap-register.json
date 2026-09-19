@@ -1,0 +1,33 @@
+{
+  "schema_version":"gap-register/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"gap-register",
+  "source_artifact_ids":["SRC-OWN-002","SRC-COMP-002","SRC-CF-001"],
+  "records":[
+    {"id":"GAP-001","priority":"P0","title":"D1 영속 저장소·공개 딜 연결","cause":"Cloudflare D1 미바인딩/10개 한도","impact":100,"status":"BLOCKED_EXTERNAL","verify":"A/B 계정 종단시험"},
+    {"id":"GAP-002","priority":"P0","title":"WeSaver Google OAuth 왕복","cause":"정확한 client/callback/secret 미확인","impact":100,"status":"BLOCKED_EXTERNAL","verify":"로그인→state/nonce→D1 재조회"},
+    {"id":"GAP-003","priority":"P0","title":"custom DNS 연결","cause":"kospanet.scanners.cc 미해결","impact":90,"status":"BLOCKED_EXTERNAL","verify":"HTTPS/CNAME/Worker route"},
+    {"id":"GAP-004","priority":"P0","title":"실제 일본 굿딜 콘텐츠","cause":"권리·검수·운영자 미확정","impact":95,"status":"WAITING_EXTERNAL","verify":"출처·시각·정정 원장"},
+    {"id":"GAP-005","priority":"P0","title":"운영자·문의·법률 표면","cause":"실제 주체·법률 검토 미증거","impact":95,"status":"WAITING_EXTERNAL","verify":"실제 수신·법률 확인"},
+    {"id":"GAP-006","priority":"P0","title":"현재 Android 실기기","cause":"adb 0대","impact":80,"status":"WAITING_EXTERNAL","verify":"유휴 1대 전체 흐름"},
+    {"id":"GAP-007","priority":"P1","title":"알림함·원격 알림 운영","cause":"D1/동의/스케줄러 미완","impact":70,"status":"PLANNED","verify":"해제·중복·만료 시험"},
+    {"id":"GAP-008","priority":"P1","title":"지점·지역 정규화","cause":"실매장 데이터 없음","impact":65,"status":"PLANNED","verify":"동일 체인 지점 분리"},
+    {"id":"GAP-009","priority":"P1","title":"광고 AdSense/CMP 실승인","cause":"게시자·동의·법적 승인 없음","impact":60,"status":"WAITING_EXTERNAL","verify":"광고 표식·동의·차단"},
+    {"id":"GAP-010","priority":"P1","title":"복구·Drive 증거","cause":"restore_verified=false","impact":55,"status":"BLOCKED_EXTERNAL","verify":"재다운로드·복원 checksum"},
+    {"id":"GAP-011","priority":"P1","title":"접근성 사람 시험","cause":"TalkBack/Narrator 사람 증거 없음","impact":50,"status":"WAITING_EXTERNAL","verify":"실기기 화면읽기"},
+    {"id":"GAP-012","priority":"P1","title":"독립 현재 경쟁군 갱신","cause":"기존 비교일 과거","impact":45,"status":"PLANNED","verify":"공식 페이지 재확인"},
+    {"id":"GAP-013","priority":"P2","title":"포인트 양도·프리미엄 정책 운영","cause":"코드·정책 경계만 존재","impact":40,"status":"PLANNED","verify":"비현금·잔액·삭제"},
+    {"id":"GAP-014","priority":"P2","title":"가계부 절약 조언의 실제 검증","cause":"합성 시험만 있음","impact":40,"status":"PLANNED","verify":"동의 파일럿"},
+    {"id":"GAP-015","priority":"P2","title":"OCR/공급자 자동수집 실데이터","cause":"승인된 원천 0건","impact":35,"status":"WAITING_EXTERNAL","verify":"권리·정확성·철회"},
+    {"id":"GAP-016","priority":"P2","title":"검색·개인화 설명","cause":"실사용 로그 미확인","impact":35,"status":"PLANNED","verify":"설명·초기화·off"},
+    {"id":"GAP-017","priority":"P2","title":"모더레이션 훈련 5종","cause":"실운영 0/5","impact":35,"status":"WAITING_EXTERNAL","verify":"실제 사건 왕복"},
+    {"id":"GAP-018","priority":"P2","title":"성능·오류 모니터링","cause":"시험판 관측과 운영 관측 분리","impact":30,"status":"PLANNED","verify":"LCP/CLS/TBT·알림"},
+    {"id":"GAP-019","priority":"P2","title":"계정 삭제·데이터 보존 실제 흐름","cause":"D1/OAuth 미연결","impact":30,"status":"BLOCKED_EXTERNAL","verify":"삭제·복구·감사"},
+    {"id":"GAP-020","priority":"P2","title":"사업자·광고·제휴 수익 실험","cause":"정책·계약·광고 승인 미완","impact":25,"status":"WAITING_EXTERNAL","verify":"광고와 자연결과 분리"}
+  ],
+  "counts":{"total":20,"p0":6,"p1":6,"p2":8},
+  "unknowns":["operator/legal/market evidence"],
+  "warnings":["impact is prioritization score, not financial forecast"]
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version":"x10-workload-ledger/v1",
+  "run_id":"INTEL-20260909T070320Z",
+  "status":"X10_PARTIAL_SCOPE",
+  "records":[
+    {"dimension":"candidate_review","baseline_count":80,"target_count":800,"actual_unique_count":10,"duplicate_rejected_count":0,"not_applicable_count":0,"unknown_count":0,"verified_count":10,"coverage_percent":1.25,"multiplier":0.125,"shortfall_reason":"기존 10개 역사 비교군만 재사용; 800개 후보 전수 조사는 수행하지 않음","substitute_depth_work":"후보별 현재성 한계·선정 관문·공식 페이지 재확인 계획"},
+    {"dimension":"common_atomic_metrics","baseline_count":160,"target_count":1600,"actual_unique_count":32,"duplicate_rejected_count":0,"not_applicable_count":0,"unknown_count":0,"verified_count":32,"coverage_percent":2.0,"multiplier":0.2,"shortfall_reason":"기존 8분야·4서비스 점수 셀을 원자 지표 seed로 재사용","substitute_depth_work":"중복 방지용 metric-family와 32칸 coverage matrix"},
+    {"dimension":"core_atomic_metrics","baseline_count":50,"target_count":800,"actual_unique_count":8,"duplicate_rejected_count":0,"not_applicable_count":0,"unknown_count":0,"verified_count":8,"coverage_percent":1.0,"multiplier":0.16,"shortfall_reason":"핵심 8개 분야의 상위 지표만 확인","substitute_depth_work":"핵심 과업별 인수조건·실패상태를 개발계획에 연결"},
+    {"dimension":"specialist_perspectives","baseline_count":5,"target_count":50,"actual_unique_count":8,"duplicate_rejected_count":0,"not_applicable_count":0,"unknown_count":0,"verified_count":8,"coverage_percent":16.0,"multiplier":1.6,"shortfall_reason":"일본 지역·콘텐츠 권리·가계부·포인트·광고·접근성·OAuth·운영 관점","substitute_depth_work":"각 관점의 외부 증거와 의사결정 기한을 human-action-packet에 기록"},
+    {"dimension":"user_task_variants","baseline_count":15,"target_count":150,"actual_unique_count":20,"duplicate_rejected_count":0,"not_applicable_count":0,"unknown_count":0,"verified_count":20,"coverage_percent":13.33,"multiplier":1.333,"shortfall_reason":"기존 브라우저·가상 사용자 시나리오 20개를 재사용","substitute_depth_work":"핵심 흐름 정상·빈·만료·오프라인·권한거부 변형을 test-case-register에 연결"},
+    {"dimension":"decision_cells","baseline_count":40,"target_count":400,"actual_unique_count":20,"duplicate_rejected_count":0,"not_applicable_count":0,"unknown_count":0,"verified_count":20,"coverage_percent":5.0,"multiplier":0.5,"shortfall_reason":"P0/P1/P2 갭에서 원자 결정 20개를 먼저 고정","substitute_depth_work":"결정마다 근거·인수조건·외부 결정권자를 명시"},
+    {"dimension":"task_card_fields","baseline_count":32,"target_count":64,"actual_unique_count":32,"duplicate_rejected_count":0,"not_applicable_count":0,"unknown_count":32,"verified_count":32,"coverage_percent":50.0,"multiplier":1.0,"shortfall_reason":"기존 카드의 32필드만 확인; 64필드 보강값 미기입","substitute_depth_work":"저숙련 AI 핸드북에 64필드 보강 템플릿 제공"},
+    {"dimension":"edge_cases","baseline_count":1000,"target_count":10000,"actual_unique_count":20,"duplicate_rejected_count":0,"not_applicable_count":0,"unknown_count":9980,"verified_count":0,"coverage_percent":0.2,"multiplier":0.02,"shortfall_reason":"20개 샘플과 생성 규칙만 기록; 실제 10,000건 실행 안 함","substitute_depth_work":"결정론적 seed·층화 규칙·실행 명령을 edge-case-10000-plan에 고정"},
+    {"dimension":"negative_samples","baseline_count":10,"target_count":100,"actual_unique_count":0,"duplicate_rejected_count":0,"not_applicable_count":0,"unknown_count":100,"verified_count":0,"coverage_percent":0.0,"multiplier":0.0,"shortfall_reason":"일부러 틀린 표본 실행 결과를 이 run에서 만들지 않음","substitute_depth_work":"100개 오류군과 예상 거부 기준을 보고서에 명시"},
+    {"dimension":"search_saturation_rounds","baseline_count":2,"target_count":20,"actual_unique_count":4,"duplicate_rejected_count":0,"not_applicable_count":0,"unknown_count":16,"verified_count":4,"coverage_percent":20.0,"multiplier":2.0,"shortfall_reason":"공식 검색 4경로를 새로 확인; 경로별 20회 포화 미달","substitute_depth_work":"검색어·지역·언어 조합과 중단 조건을 saturation log에 보존"}
+  ],
+  "x10_complete":false,
+  "reason":"적용 가능한 핵심 차원의 multiplier가 10.0 미만이며, 외부 최신 증거와 10,000 edge case 실행이 부족하다."
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "dealcatch-service-profile/v1",
+  "assessedAt": "2026-08-20",
+  "evidencePolicy": "fact, reasoned-inference, and unknown are deliberately separated.",
+  "service": {
+    "name": "DealCatch",
+    "description": "DealCatch is a Korean-language, free, local-device-first hot-deal discovery and community web service. It lets a shopper browse four deal boards, search and filter listings, inspect a generated 30-day price history, save/share search conditions, follow keywords, and participate through votes, comments, reports, and sold-out reports.",
+    "descriptionStatus": "fact",
+    "evidence": ["README.md: project description and verified features", "package.json: serverless hot-deal community description", "public mobile/PC URLs listed below"]
+  },
+  "users": [
+    {"segment": "price-sensitive Korean online shopper", "status": "reasoned-inference", "reason": "Korean UI, deal boards, seller/price/date filters, price history, and keyword notices."},
+    {"segment": "community deal contributor or moderator", "status": "fact", "reason": "Posting, voting, comments, reports, and sold-out reports are documented in README."}
+  ],
+  "problem": {"value": "Finding credible time-sensitive deals and retaining useful search conditions without requiring a server account.", "status": "reasoned-inference"},
+  "coreFlow": [
+    "Open mobile or PC web surface",
+    "Browse four boards or use search, sort, seller, price, and date filters",
+    "Open a deal and inspect price-history and discussion signals",
+    "Save or share a sanitized search condition; optionally bookmark and receive local keyword notices",
+    "Export/import local backup when the user chooses"
+  ],
+  "platforms": {
+    "mobileWeb": {"status": "fact", "evidence": "README public mobile URL; 390x844 runtime audit."},
+    "pwa": {"status": "fact", "evidence": "deploy/manifest.webmanifest, deploy/sw.js, runtime audit offline_reload pass and service_worker_controlled true."},
+    "pcWeb": {"status": "fact", "evidence": "README public PC URL; Chrome/Edge mobile+PC matrix 60/60."},
+    "nativeMobileApp": {"status": "unknown", "evidence": "A minimal Android launcher exists for old devices, but no signed store distribution is decided."}
+  },
+  "features": [
+    {"name": "four deal boards; search, filters, sort", "status": "automated-browser-verified", "evidence": "README; core 62/62; E2E 66/66."},
+    {"name": "30-day price history", "status": "automated-verified", "evidence": "tests/core.test.js price-history tests."},
+    {"name": "saved and shareable searches", "status": "automated-browser-verified", "evidence": "E2E 12a-12d and URL-state audit pass."},
+    {"name": "votes, comments, reports, sold-out reports, posting with photo shrinking", "status": "automated-browser-verified", "evidence": "README feature inventory; E2E suite."},
+    {"name": "keyword notifications and notification bulk actions", "status": "automated-verified", "evidence": "core test 50; simulate.js actions."},
+    {"name": "backup export/import, pre-restore snapshot, data cleanup", "status": "automated-browser-verified", "evidence": "E2E 33 and 33b; README."},
+    {"name": "offline reload and update flow", "status": "automated-browser-verified", "evidence": "RUNTIME_AUDIT.json offline pass and service-worker update pass."},
+    {"name": "keyboard/speech assistance", "status": "automated plus one-device verification", "evidence": "README; Android API 35 Korean speech evidence; TalkBack/Narrator human navigation not run."}
+  ],
+  "business": {
+    "revenueModel": {"value": "currently free; paid checkout intentionally blocked", "status": "fact", "evidence": "READINESS_STATUS.json and COMMERCIAL_READINESS.json."},
+    "targetMarket": {"value": "Korea/Korean-language primary", "status": "reasoned-inference", "evidence": "Korean UI and Korean deal terminology; no formal market definition found."},
+    "languages": {"value": "Korean verified; other languages unknown", "status": "fact"},
+    "releaseStage": {"value": "public free-service release candidate; paid operation blocked", "status": "fact", "evidence": "README and READINESS_STATUS.json."}
+  },
+  "technology": {
+    "stack": "Static HTML/JavaScript build with Node.js verification tooling and Playwright browser tests.",
+    "status": "fact",
+    "evidence": "package.json, tools/build.js, tests/*.js"
+  },
+  "quality": {
+    "latestEvidence": "core 62/62, E2E 66/66, runtime audit: FCP/LCP 156ms, CLS 0, offline pass, 50 named controls, 44px touch targets pass.",
+    "status": "fact",
+    "observedAt": "2026-08-19"
+  },
+  "securityAndPolicy": {
+    "observed": "HTTPS public URLs, CSP listener and security policy audit are recorded; local-device data boundary exists.",
+    "status": "fact",
+    "unknownOrBlocked": ["operator identity and support channel", "legal review of terms/privacy", "payment/refund operations", "third-party security assessment"]
+  },
+  "publicUrls": {
+    "mobile": "https://dealcatch-cityhunter-v021.bangkokbike1234.chatgpt.site/",
+    "pc": "https://dealcatch-cityhunter-v021.bangkokbike1234.chatgpt.site/pc/",
+    "dashboard": "https://dealcatch-cityhunter-v021.bangkokbike1234.chatgpt.site/dash/"
+  }
+}

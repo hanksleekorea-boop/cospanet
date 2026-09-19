@@ -1,0 +1,12 @@
+{
+  "schema_version":"top10-lock/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"top10-lock",
+  "source_artifact_ids":["SRC-COMP-002"],
+  "records":[{"lockId":"LOCK-20260824-WCA","members":["SVC-01","SVC-02","SVC-03","SVC-04","SVC-05","SVC-06","SVC-07","SVC-08","SVC-09","SVC-10"],"immutableForRun":true,"currentRankClaim":false}],
+  "counts":{"members":10},
+  "unknowns":["current market status"],
+  "warnings":["historical lock reused"]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "service-baseline/v1",
+  "run_id": "INTEL-20260909T000000Z",
+  "generated_at_utc": "2026-09-09T00:00:00Z",
+  "project_fingerprint": "kospanet-existing-worktree",
+  "artifact_type": "service-baseline",
+  "source_artifact_ids": ["OWN-README", "OWN-CURRENT-EXECUTION", "OWN-STATE", "TEST-LOCAL-20260908"],
+  "records": [{
+    "name": "코스파넷",
+    "legacyName": "DealCatch",
+    "oneSentence": "일본 생활 전반의 가성비 정보와 온라인·오프라인 굿딜을 발견·공유하고 가계부와 절약 조언을 제공하는 무료 웹/PWA 서비스",
+    "primaryDomains": [{"catalogNumber": 496, "name": "쿠폰·절약", "confidence": "high"}],
+    "secondaryDomains": [{"catalogNumber": 495, "name": "지역 상점 발견", "confidence": "high"}, {"catalogNumber": 33, "name": "커뮤니티 포럼", "confidence": "medium"}, {"catalogNumber": 9, "name": "가격 비교", "confidence": "medium"}],
+    "platforms": {"mobileWeb": true, "responsivePcWeb": true, "pwa": true, "nativeAndroid": false, "nativeIos": false},
+    "currentPublicSurfaces": {"workerTest": "https://kospanet.hanksleekorea.workers.dev", "customDomain": "https://kospanet.scanners.cc", "customDomainStatus": "unresolved"},
+    "verifiedLocal": ["npm test 80/80", "build pass", "release 27/27", "surface pass", "project history 44/44"],
+    "externalStatus": "partial_external_block"
+  }],
+  "counts": {"coreFlows": 10, "confirmedFeatures": 14},
+  "unknowns": ["real content volume", "real account persistence", "real OAuth", "operator identity", "legal review", "Android current evidence"],
+  "warnings": ["historical ChatGPT Sites URLs are not treated as current Cloudflare production"]
+}

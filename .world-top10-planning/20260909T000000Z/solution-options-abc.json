@@ -1,0 +1,10 @@
+{
+  "schema_version":"solution-options-abc/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"solution-options-abc",
+  "source_artifact_ids":["gap-register.json","best-practice-synthesis.json"],
+  "records":[{"id":"OPT-A","name":"공동 저장·OAuth·DNS 우선","class":"A","effect":"실제 무료 서비스 기반","risk":"외부 권한/쿼터","decision":"recommended"},{"id":"OPT-B","name":"콘텐츠·지역 밀도 우선","class":"B","effect":"빈 목록 감소","risk":"운영 인력·권리","decision":"after A"},{"id":"OPT-C","name":"광고·제휴·자동수집 확대","class":"C","effect":"수익·확장","risk":"법률·신뢰·비용","decision":"defer"}],
+  "counts":{"options":3},"unknowns":["operator capacity"],"warnings":[]
+}

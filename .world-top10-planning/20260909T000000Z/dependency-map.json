@@ -1,0 +1,10 @@
+{
+  "schema_version":"dependency-map/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"dependency-map",
+  "source_artifact_ids":["gap-register.json"],
+  "records":[{"from":"GAP-001","to":"GAP-002","reason":"계정과 저장소가 함께 필요"},{"from":"GAP-001","to":"GAP-004","reason":"콘텐츠 공개 저장 필요"},{"from":"GAP-002","to":"GAP-019","reason":"계정 삭제·보존 대상"},{"from":"GAP-003","to":"GAP-002","reason":"callback 공개 호스트 필요"},{"from":"GAP-005","to":"GAP-017","reason":"운영 훈련 담당자 필요"}],
+  "counts":{"edges":5},"unknowns":[],"warnings":[]
+}

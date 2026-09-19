@@ -1,0 +1,12 @@
+{
+  "schema_version":"research-saturation/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"research-saturation",
+  "source_artifact_ids":["SRC-COMP-001","SRC-COMP-002"],
+  "records":[{"dimension":"official_product_evidence","target":10,"verified":10,"status":"reused_historical"},{"dimension":"independent_current_market_leadership","target":10,"verified":0,"status":"unknown"}],
+  "counts":{"saturated_dimensions":1,"blocked_dimensions":1},
+  "unknowns":["current top10 status"],
+  "warnings":["do not interpret historical candidate count as current rank"]
+}

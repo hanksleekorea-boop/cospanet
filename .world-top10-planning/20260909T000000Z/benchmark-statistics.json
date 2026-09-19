@@ -1,0 +1,12 @@
+{
+  "schema_version":"benchmark-statistics/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"benchmark-statistics",
+  "source_artifact_ids":["benchmark-matrix.json"],
+  "records":[{"metric":"historical_three_comparator_mean","value":3.625,"note":"unweighted mean of 8 fields; not market average"},{"metric":"ours_unweighted_mean","value":2.375,"note":"current mixed evidence; unknown external conditions remain"},{"metric":"historical_gap","value":1.25,"note":"directional only"}],
+  "counts":{"comparators":3,"fields":8},
+  "unknowns":["current comparator state"],
+  "warnings":["do not convert to 99% readiness"]
+}

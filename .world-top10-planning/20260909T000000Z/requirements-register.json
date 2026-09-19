@@ -1,0 +1,10 @@
+{
+  "schema_version":"requirements-register/v1",
+  "run_id":"INTEL-20260909T000000Z",
+  "generated_at_utc":"2026-09-09T00:00:00Z",
+  "project_fingerprint":"kospanet-existing-worktree",
+  "artifact_type":"requirements-register",
+  "source_artifact_ids":["integrated-product-plan-vNEXT.md","gap-register.json"],
+  "records":[{"id":"REQ-001","text":"Google OAuth와 D1 계정별 공개 굿딜 저장","priority":"P0","status":"WAITING_EXTERNAL","acceptance":"A/B 공개 종단"},{"id":"REQ-002","text":"온라인·매장·지점·관측시각 입력","priority":"P0","status":"PLANNED","acceptance":"필수 필드·정정"},{"id":"REQ-003","text":"가계부 실제 지출 확정과 절약 조언 분리","priority":"P1","status":"IMPLEMENTED_LOCAL_UNVERIFIED","acceptance":"예상액 저장 금지"},{"id":"REQ-004","text":"광고·포인트·자연 결과 분리","priority":"P1","status":"PLANNED","acceptance":"표식·동의·off"},{"id":"REQ-005","text":"운영자 신고·삭제·재심·복구","priority":"P0","status":"WAITING_EXTERNAL","acceptance":"실제 사건"}],
+  "counts":{"requirements":5},"unknowns":["operator policy values"],"warnings":[]
+}

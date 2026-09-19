@@ -1,0 +1,11 @@
+dimension,baseline,target,actual,coverage_percent,multiplier,status,reason
+candidate_review,80,800,10,1.25,0.125,PARTIAL,historical ten only
+common_atomic_metrics,160,1600,32,2.0,0.2,PARTIAL,existing eight-field matrix
+core_atomic_metrics,50,800,8,1.0,0.16,PARTIAL,seed metrics only
+specialist_perspectives,5,50,8,16.0,1.6,PARTIAL,domain lenses covered but below x10
+user_task_variants,15,150,20,13.33,1.333,PARTIAL,existing browser/persona variants
+decision_cells,40,400,20,5.0,0.5,PARTIAL,priority decisions only
+task_card_fields,32,64,32,50.0,1.0,PARTIAL,legacy fields only
+edge_cases,1000,10000,20,0.2,0.02,PARTIAL,sample not execution
+negative_samples,10,100,0,0.0,0.0,NOT_RUN,no execution in this run
+search_saturation_rounds,2,20,4,20.0,2.0,PARTIAL,official paths sampled
